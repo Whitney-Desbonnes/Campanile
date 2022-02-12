@@ -1,0 +1,98 @@
+@import './fonts';
+@import './colors';
+@import './mixins';
+
+// wwwwwwwww code inside here wwwwwwwww
+// reset global
+*, *::after, *::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+// style pre config
+body {
+    color: $bleu;
+    font-family: $fontRegular;
+}
+
+img {
+    width: 100%;
+}
+
+a {
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: $vert;
+    padding: 10px;
+    display: inline-block;
+    margin-top: 30px;
+    font-family: $fontMedium;
+}
+
+header {
+    text-align: center;
+    .header__images {
+        overflow: hidden;
+        position: relative;
+        @include centrerBloc();
+        align-items: flex-start;
+        .header__images-logo {
+            position: absolute;
+            width: 60%;
+            margin-top: 30px;
+        }
+        .header__images-bgd-desk {
+            display: none;
+        }
+    }
+
+    .header__contents {
+        background-color: $bleu;
+        color: #fff;
+        padding: 25px;
+        .header__date-offre {
+            font-family: $fontMedium;
+            text-transform: uppercase;
+        }
+        hr {
+            height: 3px;
+            background-color: #fff;
+            border: none;
+            width: 70%;
+            margin: 10px auto 20px;
+            border-radius: 20px;
+        }
+        .header__offre {
+            color: $vert;
+            font-size: 1.8rem;
+            text-transform: uppercase;
+            font-family: $fontMedium;
+            display: block;
+            margin: 5px 0;
+            letter-spacing: .1rem;
+        }
+        .header__code-promo {
+            display: inline-block;
+            border: 3px solid #fff;
+            font-family: $fontMedium;
+            border-radius: 5px;
+            padding: 3px;
+            font-size: 1.5rem;
+            margin: 10px auto 15px;
+            letter-spacing: .1rem;
+        }
+        .header__description3 {
+            font-family: $fontLight;
+            font-size: 0.8rem;
+        }
+    }
+}
+
+
+
+
+// wwwwwwwwwwwwwwwwwwwwwwwwwww
+
+@import './mediaqueries';

@@ -1,0 +1,40 @@
+@font-face {
+    font-family: "Campanile-Light";
+    src: url("../../fonts/Campanile-Light.eot") format("eot"),
+         url("../../fonts/Campanile-Light.otf") format("otf"),
+         url("../../fonts/Campanile-Light.ttf") format("ttf"),
+         url("../../fonts/Campanile-Light.woff") format("woff"),
+         url("../../fonts/Campanile-Light.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Campanile-Regular";
+    src: url("../../fonts/Campanile-Regular.eot") format("eot"),
+         url("../../fonts/Campanile-Regular.otf") format("otf"),
+         url("../../fonts/Campanile-Regular.ttf") format("ttf"),
+         url("../../fonts/Campanile-Regular.woff") format("woff"),
+         url("../../fonts/Campanile-Regular.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Campanile-Medium";
+    src: url("../../fonts/Campanile-Medium.eot") format("eot"),
+         url("../../fonts/Campanile-Medium.otf") format("otf"),
+         url("../../fonts/Campanile-Medium.ttf") format("ttf"),
+         url("../../fonts/Campanile-Medium.woff") format("woff"),
+         url("../../fonts/Campanile-Medium.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Campanile-Bold";
+    src: url("../../fonts/Campanile-Bold.eot") format("eot"),
+         url("../../fonts/Campanile-Bold.otf") format("otf"),
+         url("../../fonts/Campanile-Bold.ttf") format("ttf"),
+         url("../../fonts/Campanile-Bold.woff") format("woff"),
+         url("../../fonts/Campanile-Bold.woff2") format("woff2");
+}
+
+$fontLight:'Campanile-Light';
+$fontRegular:'Campanile-Regular';
+$fontMedium:'Campanile-Medium';
+$fontBold:'Campanile-Bold';
