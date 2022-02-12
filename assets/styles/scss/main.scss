@@ -90,6 +90,44 @@ header {
     }
 }
 
+main {
+    .container__img {
+        width: 85%;
+        height: 200px;
+        overflow: hidden;
+    }
+
+    .container__description {
+        padding: 15px;
+    }
+
+    .container.top {
+        margin-top: 30px;
+        .container__img {
+            .dot2 {
+                display: none;
+            }
+        }
+    }
+    .container.bottom {
+        position: relative;
+        text-align: right;
+        margin-top: 100px;
+        .container__img {
+            margin: 30px 0 0 auto;
+            .dot3 {
+                width: 200px;
+                position: absolute;
+                top: 0;
+                left: 0;
+                display: block;
+                transform: translateY(-70%);
+                margin-left: 10px;
+            }
+        }
+    }
+}
+
 
 
 
