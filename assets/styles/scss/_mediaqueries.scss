@@ -1,7 +1,118 @@
 @media only screen and (min-width: 768px) {
+    body {
+        font-size: 1.3rem;
+    }
+    header {
+        .header__images {
+            .header__images-logo {
+                width: 30%;
+            }
+            .header__images-bgd-mob {
+                display: none;
+            }
+            .header__images-bgd-desk {
+                display: block;
+            }
+        }
 
+    }
+
+    main {
+        width: 90%;
+        margin: auto;
+        .container {
+            @include centrerBloc();
+            .container__img {
+                width: 50%;
+                overflow: visible;
+                height: 100%;
+            }
+            .container__description {
+                width: 50%;
+                .ligne-decoration {
+                    background-color: $bleu;
+                    display: block;
+                    height: 3px;
+                    width: 30%;
+                    border-radius: 10px;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+        
+        .container.top {
+            @include centrerBloc();
+            flex-direction: row-reverse;
+            .container__img {
+                .dot2 {
+                    width: 85px;
+                    position: absolute;
+                    bottom: 0;
+                    right: 0;
+                    display: block;
+                    transform: translateY(60%);
+                    margin-right: 10px;
+                }
+            }
+
+            .container__description {
+                text-align: right;
+                margin-right: 15px;
+                .ligne-decoration {
+                    margin: 0 0 10px auto;
+                    padding-right: 15px;
+                }
+            }
+
+        }
+
+        .container.bottom {
+            @include centrerBloc();
+            .container__img {
+                .bloc-visu2 {
+                    margin-left: 30px;
+                }
+                .dot3 {
+                    transform: translateY(-40%);
+                    margin: 0;
+                }
+            }
+            .container__description { 
+                text-align: left;
+                margin-left: 40px;
+            }
+        }
+    }
 }
 
 @media only screen and (min-width: 992px) {
-    
+    header {
+        .header__images {
+            height: 391px;
+            .header__images-logo {
+                width: 20%;
+            }
+        }
+        .header__contents {
+            width: 70%;
+            margin: auto;
+        }
+    }
+    main {
+        width: 70%;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    header {
+        .header__images {
+            height: 470px;
+        }
+        .header__contents {
+            width: 60%;
+        }
+    }
+    main {
+        width: 60%;
+    }
 }

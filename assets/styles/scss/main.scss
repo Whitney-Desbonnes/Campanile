@@ -91,6 +91,9 @@ header {
 }
 
 main {
+    .container {
+        position: relative;
+    }
     .container__img {
         width: 85%;
         height: 200px;
@@ -110,7 +113,6 @@ main {
         }
     }
     .container.bottom {
-        position: relative;
         text-align: right;
         margin-top: 100px;
         .container__img {
